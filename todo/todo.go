@@ -1,11 +1,12 @@
 package todo
 
 import (
-	"finalexam/customerdatabase"
 	"fmt"
 	"log"
 	"net/http"
 	"strconv"
+
+	"github.com/cchantan/finalexam/customerdatabase"
 
 	"github.com/gin-gonic/gin"
 	_ "github.com/lib/pq"

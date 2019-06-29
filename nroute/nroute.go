@@ -1,9 +1,9 @@
 package nroute
 
 import (
-	"finalexam/customerdatabase"
-	"finalexam/middleware"
-	"finalexam/todo"
+	"github.com/cchantan/finalexam/customerdatabase"
+	"github.com/cchantan/finalexam/middleware"
+	"github.com/cchantan/finalexam/todo"
 
 	"github.com/gin-gonic/gin"
 	_ "github.com/lib/pq"
@@ -25,6 +25,5 @@ func Nroute() *gin.Engine {
 	r.POST("/customers/", s.PostCustomersHandler)
 	r.DELETE("/customers/:id", s.DeleteCustomersByIdHandler)
 	r.PUT("/customers/:id", s.PutCustomersByIdHandler)
-	//r.GET("/customers/:id", s.Checkauthgetcustomer)
 	return r
 }

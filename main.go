@@ -1,7 +1,7 @@
 package main
 
 import (
-	"finalexam/nroute"
+	"github.com/cchantan/finalexam/nroute"
 
 	_ "github.com/lib/pq"
 )
